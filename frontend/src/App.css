@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.sidebar {
+  width: 260px;
+  background: #111827;
+  color: white;
+  padding: 24px 16px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.new-research-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.new-research-btn:hover {
+  background: #1d4ed8;
+}
+
+.conversation-section h3 {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.conversation-item {
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.conversation-item:hover {
+  background: #1f2937;
+}
+
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.header {
+  padding: 24px 40px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+
+/* ============================================================
+   CHAT AREA
+   ============================================================ */
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+
+/* ============================================================
+   WELCOME
+   ============================================================ */
+
+.welcome {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.robot-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.welcome h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.welcome p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.input-container {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.input-container textarea {
+  flex: 1;
+  resize: none;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-container textarea:focus {
+  border-color: #2563eb;
+}
+
+.send-btn {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ============================================================
+   RESULTS
+   ============================================================ */
+
+.results {
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+.question-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question-card h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.question-card p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.result-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.result-section h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.result-section ol {
+  padding-left: 24px;
+}
+
+.result-section li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.answer {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.research-result {
+  border-top: 1px solid #e5e7eb;
+  padding: 18px 0;
+}
+
+.research-result:first-child {
+  border-top: none;
+}
+
+.research-result h3 {
+  color: #2563eb;
+  font-size: 16px;
+}
+
+.research-result p {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+
+.error-message {
+  max-width: 850px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* ============================================================
+   DISABLED BUTTON
+   ============================================================ */
+
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.new-research-btn:disabled {
+  opacity: 0.6;
+}
